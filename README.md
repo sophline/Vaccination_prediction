@@ -18,3 +18,60 @@ Understanding these factors and modelling them  as a data scientist will be pert
  The goal is to determine the most effective behaviors that lead people to get vaccinated against the H1N1 flu virus and seasonal flu viruses. This involves identifying key factors that influence behavior and motivations, such as education, age, employer influence, health insurance, physician recommendations, presence of chronic diseases, and employment in the healthcare sector. Additionally, vaccination status may be affected by behaviors like face-touching, attending large gatherings, wearing masks, and hand-washing habits.
 
 The primary objective of this algorithm is classification. It should analyze attributes from the National 2009 H1N1 Flu and Seasonal Flu Survey dataset to determine if a respondent received the seasonal flu vaccine or the H1N1 flu vaccine. The model's effectiveness will be measured by how accurately it predicts vaccination status based on the respondent's behaviors and motivational factors.
+
+
+### Objectives
+.To determine whether opinion is  associated with higher vaccination rates for both H1N1 and seasonal flu.
+
+. To develop a learning algorithim that predicts vaccination status based on the respondent behaviours.
+
+.To recommend strategies to improve vaccination rates based on the identified key factors and behavioral patterns.
+
+
+## EDA
+The number of those vaccinated against HN1
+![alt text](image-1.png)
+
+The number of those vaccinated against seasonal flu
+![alt text](image-2.png)
+
+## Data models output
+1. Baseline model
+![alt text](image-3.png)
+
+2. Data pipeline 
+The AUC CURVE
+![alt text](image-4.png)
+
+The ROC CURVE
+![alt text](image-5.png)
+
+3.CURVES AFTER SMOTE
+![alt text](image-6.png)
+
+Roc smote
+
+![alt text](image-7.png)
+ 
+
+ ## conclusion and recommendation
+ Based on the Eda analyis . Behavioral-related questions shows a strong negative correlation with the likelihood of an individual receiving the vaccine.
+
+.It appears that opinion_seas_sick_from_vaccine and opinion_h1n1_sick_from_vacc both have a strong negative correlation to the H1N1 target variable.
+
+The baseline model demonstrates solid performance across various metrics on the test set. With an accuracy of approximately 81.49%, it correctly predicts the outcome for a significant portion of instances. Despite this, its recall score of around 56.55% suggests that it might miss capturing some positive instances. However, the model achieves a precision of approximately 75.3%, indicating a relatively low rate of false positives among its positive predictions. The F1 score, at about 64.59%, signifies a balance between precision and recall, reflecting the model's ability to maintain performance across both aspects. Overall, while the model exhibits strong predictive capability, there is room for improvement, particularly in capturing more positive instances without significantly increasing false positives.
+
+
+
+### Recommendation
+next steps;Perform parameter tuning for the SMOTE models
+
+            perform analysis for more variables and how they relate to vaccination
+
+
+utilize more recent data for efficacy and recent vaccinations 
+
+
+Educate people on the need of vaccines and work on minimizing risks of vaccine
+
+
