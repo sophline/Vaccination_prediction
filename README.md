@@ -59,19 +59,20 @@ Roc smote
 
 .It appears that opinion_seas_sick_from_vaccine and opinion_h1n1_sick_from_vacc both have a strong negative correlation to the H1N1 target variable.
 
-The baseline model demonstrates solid performance across various metrics on the test set. With an accuracy of approximately 81.49%, it correctly predicts the outcome for a significant portion of instances. Despite this, its recall score of around 56.55% suggests that it might miss capturing some positive instances. However, the model achieves a precision of approximately 75.3%, indicating a relatively low rate of false positives among its positive predictions. The F1 score, at about 64.59%, signifies a balance between precision and recall, reflecting the model's ability to maintain performance across both aspects. Overall, while the model exhibits strong predictive capability, there is room for improvement, particularly in capturing more positive instances without significantly increasing false positives.
+The Gradient Boosting Model shows strong performance with a good balance between precision and recall, reflected in a solid F1 score. The high AUC score further confirms its capability in distinguishing between classes effectively. While the model performs well, particularly in its precision and AUC metrics, there remains a moderate scope for improvement, especially in recall and overall accuracy to ensure even better classification results.
 
 
 
+
+### Next steps;
+Perform parameter tuning for  other models in the SMOTE models
+
+perform analysis for more variables and how they relate to vaccination
 ### Recommendation
-next steps;Perform parameter tuning for the SMOTE models
 
-            perform analysis for more variables and how they relate to vaccination
-
-
-utilize more recent data for efficacy and recent vaccinations 
+1. more recent data for efficacy and recent vaccinations 
 
 
-Educate people on the need of vaccines and work on minimizing risks of vaccine
+2. Educate people on the need of vaccines and work on minimizing risks of vaccine
 
 
